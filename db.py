@@ -6,8 +6,7 @@ app.secret_key = "your_secret_key"  # Required for session-based authentication
 
 # Hardcoded user credentials for simplicity (for Postman and URL verification)
 users = {
-    'admin@example.com': 'password123'
-}
+    'admin@example.com': 'password123'}
 
 class Database:
     def __init__(self, db_name):
