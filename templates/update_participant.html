@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Participant</title>
+</head>
+<body>
+    <h2>Update Participant</h2>
+    <form method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="{{ participant[1] }}" required>
+        </div>
+        <div>
+            <label for="Father_name">Father's Name:</label>
+            <input type="text" name="Father_name" value="{{ participant[2] }}" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="{{ participant[3] }}" required>
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" name="city" value="{{ participant[4] }}" required>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" name="country" value="{{ participant[5] }}" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" value="{{ participant[6] }}" required>
+        </div>
+        <button type="submit">Update</button>
+    </form>
+
+    <p><a href="{{ url_for('form') }}">Back to Participants List</a></p>
+</body>
+</html>
